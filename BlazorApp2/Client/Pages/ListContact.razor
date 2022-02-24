@@ -1,4 +1,4 @@
-﻿@page  "/ListContact"
+﻿@page  "/listContacts"
 @using BlazorDirectoryProject
 @inject HttpClient Http
 @inject NavigationManager Navigation
@@ -40,8 +40,5 @@ else
         _contacts = await Http.GetFromJsonAsync<List<Contact>>("https://localhost:7086/api/Contact");
     }
     
-    @* private void Create()
-    {
-        Navigation.NavigateTo($"/add");
-    } *@
+
 }

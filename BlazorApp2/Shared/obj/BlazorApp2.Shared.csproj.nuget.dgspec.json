@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repositorios\\Proyecto de agenda Blazor\\plantillaBlazorMVC-main\\BlazorApp2\\Shared\\BlazorApp2.Shared.csproj": {}
+    "C:\\Repositorios\\Proyecto de agenda Blazor\\prueba\\BlazorDirectoryProject\\BlazorApp2\\Shared\\BlazorApp2.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Repositorios\\Proyecto de agenda Blazor\\plantillaBlazorMVC-main\\BlazorApp2\\Shared\\BlazorApp2.Shared.csproj": {
+    "C:\\Repositorios\\Proyecto de agenda Blazor\\prueba\\BlazorDirectoryProject\\BlazorApp2\\Shared\\BlazorApp2.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repositorios\\Proyecto de agenda Blazor\\plantillaBlazorMVC-main\\BlazorApp2\\Shared\\BlazorApp2.Shared.csproj",
+        "projectUniqueName": "C:\\Repositorios\\Proyecto de agenda Blazor\\prueba\\BlazorDirectoryProject\\BlazorApp2\\Shared\\BlazorApp2.Shared.csproj",
         "projectName": "BlazorApp2.Shared",
-        "projectPath": "C:\\Repositorios\\Proyecto de agenda Blazor\\plantillaBlazorMVC-main\\BlazorApp2\\Shared\\BlazorApp2.Shared.csproj",
+        "projectPath": "C:\\Repositorios\\Proyecto de agenda Blazor\\prueba\\BlazorDirectoryProject\\BlazorApp2\\Shared\\BlazorApp2.Shared.csproj",
         "packagesPath": "C:\\Users\\cacruzs\\.nuget\\packages\\",
-        "outputPath": "C:\\Repositorios\\Proyecto de agenda Blazor\\plantillaBlazorMVC-main\\BlazorApp2\\Shared\\obj\\",
+        "outputPath": "C:\\Repositorios\\Proyecto de agenda Blazor\\prueba\\BlazorDirectoryProject\\BlazorApp2\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cacruzs\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,30 +1,34 @@
-@page "/add"
+@page "/addContact"
 @using BlazorDirectoryProject;
 @inject HttpClient Http
 @inject NavigationManager Navigation
 <h3>Add Contact</h3>
 <EditForm Model="@_contact" OnValidSubmit="Post">
     <div class="form-group">
-        <label>Name Contact: </label>
-        <InputTextArea @bind-Value="_contact.nameContact" />
+        <label>Name Contact</label>
+        <InputText @ref="name" @bind-Value="_contact.nameContact" />
     </div>
     <div class="form-group">
         <label>Phone Contact</label>
-        <InputTextArea @bind-Value="_contact.landlineContact"/>
+        <InputText @ref="landline" @bind-Value="_contact.landlineContact"/>
     </div>
     <div class="form-group">
         <label>Cellphone Contact</label>
-        <InputTextArea @bind-Value="_contact.cellphoneContact"/>
+        <InputText @ref="cellphone" @bind-Value="_contact.cellphoneContact"/>
     </div>
     <div class="form-group">
         <input type="submit" class="btn btn-success" value="Add Contact" />
     </div>
 </EditForm>
 @code {
+    InputText name;
+    InputText landline;
+    InputText cellphone;
+
     private Contact _contact = new();
     private async Task Post()
     {
         await Http.PostAsJsonAsync<Contact>("/api/Contact", _contact);
-        //Navigation.NavigateTo($"/listContact");
+        Navigation.NavigateTo($"/listContacts");
     }
 }

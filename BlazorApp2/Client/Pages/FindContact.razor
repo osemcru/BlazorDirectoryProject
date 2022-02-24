@@ -1,0 +1,34 @@
+@page "/findContact"
+@using BlazorDirectoryProject
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+<PageTitle>Find Contact</PageTitle>
+
+<h1>Find Contact</h1>
+
+
+<EditForm Model="@contact" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    Contact name =<InputText id="nameContact" @bind-Value="contact.nameContact" />
+    <br>
+    <br>
+    <div class="form-group">
+        <input type="submit" class="btn btn-success" value="Find Contact" />
+    </div>
+</EditForm>
+
+
+
+@code {
+    private Contact contact = new();
+
+    private Contact _contact;
+
+    private async void HandleValidSubmit()
+    {
+        _contact = await Http.GetFromJsonAsync<Contact>("/api/Contact/"+contact.nameContact);
+    }
+}

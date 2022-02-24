@@ -1,0 +1,31 @@
+@page "/deleteContact"
+@using BlazorDirectoryProject;
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+<PageTitle>Delete Contact</PageTitle>
+
+<h1>Delete Contact</h1>
+
+
+<EditForm Model="@contact" OnValidSubmit="@Delete">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    Contact name =<InputText id="nameContact" @bind-Value="contact.nameContact" />
+    <br>
+   <div class="form-group">
+        <input type="submit" class="btn btn-success" value="Delete Contact" />
+    </div>
+</EditForm>
+
+
+@code {
+    private Contact contact = new();
+
+   private async Task Delete()
+    {
+        await Http.DeleteAsync("/api/Contact/"+contact.nameContact);
+        Navigation.NavigateTo($"/listContacts");
+    }
+}

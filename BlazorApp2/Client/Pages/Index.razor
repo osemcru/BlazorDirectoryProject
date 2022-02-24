@@ -1,0 +1,41 @@
+﻿@page "/"
+@using BlazorDirectoryProject
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+<PageTitle>Home</PageTitle>
+
+<h1>Welcome to the phone book</h1>
+
+Your total agenda space is: @sizeContact
+<br>
+Come on, define the size of your phone book:
+
+<div class="form-group">
+    <input id="sizeDirectory" @bind-value="sizeContactQuestion">
+    <br>
+    <input type="submit" class="btn btn-success" value="Submit" @onclick="HandleValidSubmit" />
+</div>
+@code {
+    private string sizeContactQuestion;
+    public static int sizeContact;
+
+
+
+
+    private void HandleValidSubmit()
+    {
+        try
+        {
+            if (sizeContactQuestion != null || sizeContactQuestion != "0")
+                sizeContact = Int16.Parse(sizeContactQuestion);
+
+        }
+        catch (Exception)
+        {
+        }
+
+    }
+
+   
+}

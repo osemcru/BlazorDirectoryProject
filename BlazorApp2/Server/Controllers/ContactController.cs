@@ -33,5 +33,37 @@ public class ContactController : ControllerBase
         _context.SaveChanges();
         return Ok(_context.Contacts.ToList());
     }
+
+    [HttpDelete("{name}")]
+    public IActionResult DeleteContact(string name)
+    {
+        var cont = _context.Contacts.SingleOrDefault(x => x.nameContact == name);
+        if (cont == null)
+        {
+            return NotFound("The contact with the name " + name + " does not exist in the directory");
+        }
+        _context.Contacts.Remove(cont);
+        _context.SaveChanges();
+        return Ok("The contact with the name " + name + " has been deleted");
+    }
+
+    [HttpGet("{name}")]
+    public IActionResult GetOneContact(string name)
+    {
+        try
+        {
+            var cont = _context.Contacts.SingleOrDefault(x => x.nameContact == name);
+            if (cont != null)
+            {
+                return Ok("The contact with the name " + name + " and has the cell phone " + cont.cellphoneContact);
+            }
+        }
+        catch (Exception e)
+        {
+        }
+         return NotFound("The contact with the name " + name + " does not exist in the directory");
+    }
+
+
 }
 

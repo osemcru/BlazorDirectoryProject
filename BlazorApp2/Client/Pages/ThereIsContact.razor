@@ -1,0 +1,26 @@
+@page "/thereIsContact"
+@using BlazorDirectoryProject
+
+<PageTitle>There is Contact</PageTitle>
+
+<h1>There is Contact</h1>
+
+
+<EditForm Model="@contact" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    Contact name =<InputText id="nameContact" @bind-Value="contact.nameContact" />
+    <br>
+    <button type="submit">Submit</button>
+</EditForm>
+
+
+@code {
+    private Contact contact = new();
+
+    private void HandleValidSubmit()
+    {
+        
+    }
+}

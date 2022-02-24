@@ -1577,11 +1577,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repositorios\\Proyecto de agenda Blazor\\plantillaBlazorMVC-main\\BlazorApp2\\Client\\BlazorApp2.Client.csproj",
+      "projectUniqueName": "C:\\Repositorios\\Proyecto de agenda Blazor\\prueba\\BlazorDirectoryProject\\BlazorApp2\\Client\\BlazorApp2.Client.csproj",
       "projectName": "BlazorApp2.Client",
-      "projectPath": "C:\\Repositorios\\Proyecto de agenda Blazor\\plantillaBlazorMVC-main\\BlazorApp2\\Client\\BlazorApp2.Client.csproj",
+      "projectPath": "C:\\Repositorios\\Proyecto de agenda Blazor\\prueba\\BlazorDirectoryProject\\BlazorApp2\\Client\\BlazorApp2.Client.csproj",
       "packagesPath": "C:\\Users\\cacruzs\\.nuget\\packages\\",
-      "outputPath": "C:\\Repositorios\\Proyecto de agenda Blazor\\plantillaBlazorMVC-main\\BlazorApp2\\Client\\obj\\",
+      "outputPath": "C:\\Repositorios\\Proyecto de agenda Blazor\\prueba\\BlazorDirectoryProject\\BlazorApp2\\Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cacruzs\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1599,8 +1599,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Repositorios\\Proyecto de agenda Blazor\\plantillaBlazorMVC-main\\BlazorApp2\\Shared\\BlazorApp2.Shared.csproj": {
-              "projectPath": "C:\\Repositorios\\Proyecto de agenda Blazor\\plantillaBlazorMVC-main\\BlazorApp2\\Shared\\BlazorApp2.Shared.csproj"
+            "C:\\Repositorios\\Proyecto de agenda Blazor\\prueba\\BlazorDirectoryProject\\BlazorApp2\\Shared\\BlazorApp2.Shared.csproj": {
+              "projectPath": "C:\\Repositorios\\Proyecto de agenda Blazor\\prueba\\BlazorDirectoryProject\\BlazorApp2\\Shared\\BlazorApp2.Shared.csproj"
             }
           }
         }
