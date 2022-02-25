@@ -32,6 +32,8 @@ public class ContactController : ControllerBase
         _context.Contacts.Add(contact);
         _context.SaveChanges();
         return Ok(_context.Contacts.ToList());
+
+
     }
 
     [HttpDelete("{name}")]
@@ -48,22 +50,36 @@ public class ContactController : ControllerBase
     }
 
     [HttpGet("{name}")]
-    public IActionResult GetOneContact(string name)
+    public Contact FindOneContact(string name)
     {
         try
         {
             var cont = _context.Contacts.SingleOrDefault(x => x.nameContact == name);
-            if (cont != null)
-            {
-                return Ok("The contact with the name " + name + " and has the cell phone " + cont.cellphoneContact);
-            }
+            return cont;
         }
-        catch (Exception e)
+        catch (Exception)
         {
+            throw;
         }
-         return NotFound("The contact with the name " + name + " does not exist in the directory");
+    ;
     }
 
+    [HttpGet("thereIs/{name}")]
+    public bool GetOneContact(string name)
+    {
+        var cont = _context.Contacts.SingleOrDefault(x => x.nameContact == name);
+        if (cont != null)
+        {
+           return true;
+        }
+        else
+        {
+            return false;
+        }
 
+    }
 }
+
+
+
 
