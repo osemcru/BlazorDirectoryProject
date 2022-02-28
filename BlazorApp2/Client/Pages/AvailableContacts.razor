@@ -6,11 +6,13 @@
 <h1>Available Contacts</h1>
 
 
+<span> The spaces available in the telephone directory are: </span>
+@spaces
 
 
 @code {
     private Contact contact = new();
-
+    private int spaces = Index.sizeContact-AddContact.sizeActually;
     private void HandleValidSubmit()
     {
        

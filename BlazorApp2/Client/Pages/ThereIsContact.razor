@@ -1,5 +1,7 @@
 @page "/thereIsContact"
 @using BlazorDirectoryProject
+@inject HttpClient Http
+@inject NavigationManager Navigation
 
 <PageTitle>There is Contact</PageTitle>
 
@@ -10,17 +12,38 @@
     <DataAnnotationsValidator />
     <ValidationSummary />
 
-    Contact name =<InputText id="nameContact" @bind-Value="contact.nameContact" />
+    Contact name =
+    <InputText id="nameContact" @bind-Value="contact.nameContact" />
     <br>
-    <button type="submit">Submit</button>
+     <input type="submit" class="btn btn-success" value="There is Contact" />
 </EditForm>
 
+Message: @message
 
 @code {
     private Contact contact = new();
+    private bool _contact;
 
-    private void HandleValidSubmit()
+    private string message = "";
+
+    private async Task HandleValidSubmit()
     {
-        
+        try
+        {
+           _contact =  await Http.GetFromJsonAsync<bool>("/api/Contact/thereIs/" + contact.nameContact);
+
+            if (!_contact)
+            {
+                message = "The contact does not exist";
+            }
+            else
+            {
+                message = "The contact does exist";
+            }
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 }

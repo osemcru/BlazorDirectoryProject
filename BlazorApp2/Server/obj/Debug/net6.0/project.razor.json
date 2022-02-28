@@ -4592,6 +4592,39 @@
         }
       },
       {
+        "HashCode": 915950889,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp2.Client.Pages.AddContact",
+        "AssemblyName": "BlazorApp2.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AddContact"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp2.Client.Pages.AddContact"
+        }
+      },
+      {
+        "HashCode": -369512729,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp2.Client.Pages.AddContact",
+        "AssemblyName": "BlazorApp2.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp2.Client.Pages.AddContact"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp2.Client.Pages.AddContact",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -1584625778,
         "Kind": "Components.Component",
         "Name": "BlazorApp2.Client.Pages.AvailableContacts",
@@ -4654,39 +4687,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorApp2.Client.Pages.DeleteContact",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -418840446,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp2.Client.Pages.FindContact",
-        "AssemblyName": "BlazorApp2.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FindContact"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp2.Client.Pages.FindContact"
-        }
-      },
-      {
-        "HashCode": 2000452556,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp2.Client.Pages.FindContact",
-        "AssemblyName": "BlazorApp2.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp2.Client.Pages.FindContact"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp2.Client.Pages.FindContact",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

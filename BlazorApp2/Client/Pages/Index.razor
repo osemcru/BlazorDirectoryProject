@@ -1,4 +1,5 @@
 ﻿@page "/"
+
 @using BlazorDirectoryProject
 @inject HttpClient Http
 @inject NavigationManager Navigation
@@ -23,13 +24,12 @@ Come on, define the size of your phone book:
 
 
 
-    private void HandleValidSubmit()
+    public async Task HandleValidSubmit()
     {
         try
         {
             if (sizeContactQuestion != null || sizeContactQuestion != "0")
                 sizeContact = Int16.Parse(sizeContactQuestion);
-
         }
         catch (Exception)
         {

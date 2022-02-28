@@ -12,9 +12,10 @@
     <DataAnnotationsValidator />
     <ValidationSummary />
 
-    Contact name =<InputText id="nameContact" @bind-Value="contact.nameContact" />
+    Contact name =
+    <InputText id="nameContact" @bind-Value="contact.nameContact" />
     <br>
-   <div class="form-group">
+    <div class="form-group">
         <input type="submit" class="btn btn-success" value="Delete Contact" />
     </div>
 </EditForm>
@@ -23,9 +24,16 @@
 @code {
     private Contact contact = new();
 
-   private async Task Delete()
+    private async Task Delete()
     {
-        await Http.DeleteAsync("/api/Contact/"+contact.nameContact);
-        Navigation.NavigateTo($"/listContacts");
+
+        HttpResponseMessage response = await Http.DeleteAsync("/api/Contact/" + contact.nameContact);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Navigation.NavigateTo($"/listContacts");
+            AddContact.sizeActually--;
+        }
+
     }
 }

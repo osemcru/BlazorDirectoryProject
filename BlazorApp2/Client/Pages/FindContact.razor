@@ -8,11 +8,12 @@
 <h1>Find Contact</h1>
 
 
-<EditForm Model="@contact" OnValidSubmit="@HandleValidSubmit">
+<EditForm Model="@contact" OnValidSubmit="@OnInitializedAsync">
     <DataAnnotationsValidator />
     <ValidationSummary />
 
-    Contact name =<InputText id="nameContact" @bind-Value="contact.nameContact" />
+    Contact name =
+    <InputText id="nameContact" @bind-Value="contact.nameContact" />
     <br>
     <br>
     <div class="form-group">
@@ -20,15 +21,41 @@
     </div>
 </EditForm>
 
-
+@if (_contact != null)
+{
+                <span>Name: @name</span>
+                <br>
+                <span>Cellphone: @cellphone</span>
+}else{
+    @name
+}
 
 @code {
     private Contact contact = new();
 
+    private string name ="";
+    private string cellphone="";
+
     private Contact _contact;
 
-    private async void HandleValidSubmit()
+    private async void OnInitializedAsync()
     {
-        _contact = await Http.GetFromJsonAsync<Contact>("/api/Contact/"+contact.nameContact);
+        try
+        {
+           _contact = await Http.GetFromJsonAsync<Contact>("/api/Contact/" + contact.nameContact);
+            
+
+            if (_contact != null)
+            {
+                name = _contact.nameContact;
+                cellphone = _contact.cellphoneContact;
+            }else{
+                name = "That contact is not exist";
+            }
+        }
+        catch (Exception)
+        {
+
+        }
     }
 }
