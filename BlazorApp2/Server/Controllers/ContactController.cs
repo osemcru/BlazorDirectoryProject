@@ -67,16 +67,18 @@ public class ContactController : ControllerBase
     [HttpGet("thereIs/{name}")]
     public bool GetOneContact(string name)
     {
-        var cont = _context.Contacts.SingleOrDefault(x => x.nameContact == name);
-        if (cont != null)
+        try
         {
-           return true;
+            var cont = _context.Contacts.SingleOrDefault(x => x.nameContact == name);
+            if (cont != null)
+            {
+                return true;
+            }
         }
-        else
+        catch (Exception)
         {
-            return false;
         }
-
+        return false;
     }
 }
 

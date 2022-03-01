@@ -8,25 +8,27 @@
 <h1>There is Contact</h1>
 
 
-<EditForm Model="@contact" OnValidSubmit="@HandleValidSubmit">
+<EditForm Model="@contact" OnValidSubmit="@OnInitializedAsync">
     <DataAnnotationsValidator />
     <ValidationSummary />
 
     Contact name =
     <InputText id="nameContact" @bind-Value="contact.nameContact" />
     <br>
+     <div class="form-group">
      <input type="submit" class="btn btn-success" value="There is Contact" />
+     </div>
 </EditForm>
 
 Message: @message
 
 @code {
-    private Contact contact = new();
+    private Contact contact = new("");
     private bool _contact;
 
     private string message = "";
 
-    private async Task HandleValidSubmit()
+    private async Task OnInitializedAsync()
     {
         try
         {
@@ -43,7 +45,6 @@ Message: @message
         }
         catch (Exception)
         {
-            throw;
         }
     }
 }

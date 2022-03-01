@@ -41,39 +41,6 @@
         }
       },
       {
-        "HashCode": 250193525,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp2.Client.Pages.Index",
-        "AssemblyName": "BlazorApp2.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp2.Client.Pages.Index"
-        }
-      },
-      {
-        "HashCode": -1038266199,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp2.Client.Pages.Index",
-        "AssemblyName": "BlazorApp2.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp2.Client.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp2.Client.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -418840446,
         "Kind": "Components.Component",
         "Name": "BlazorApp2.Client.Pages.FindContact",
@@ -103,72 +70,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorApp2.Client.Pages.FindContact",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -776445014,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp2.Client.Pages.ThereIsContact",
-        "AssemblyName": "BlazorApp2.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ThereIsContact"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp2.Client.Pages.ThereIsContact"
-        }
-      },
-      {
-        "HashCode": -913950187,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp2.Client.Pages.ThereIsContact",
-        "AssemblyName": "BlazorApp2.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp2.Client.Pages.ThereIsContact"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp2.Client.Pages.ThereIsContact",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 2039593651,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp2.Client.Pages.ListContact",
-        "AssemblyName": "BlazorApp2.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ListContact"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp2.Client.Pages.ListContact"
-        }
-      },
-      {
-        "HashCode": 1454843034,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp2.Client.Pages.ListContact",
-        "AssemblyName": "BlazorApp2.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp2.Client.Pages.ListContact"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp2.Client.Pages.ListContact",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -206,6 +107,72 @@
         }
       },
       {
+        "HashCode": 250193525,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp2.Client.Pages.Index",
+        "AssemblyName": "BlazorApp2.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp2.Client.Pages.Index"
+        }
+      },
+      {
+        "HashCode": -1038266199,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp2.Client.Pages.Index",
+        "AssemblyName": "BlazorApp2.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp2.Client.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp2.Client.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 2039593651,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp2.Client.Pages.ListContact",
+        "AssemblyName": "BlazorApp2.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ListContact"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp2.Client.Pages.ListContact"
+        }
+      },
+      {
+        "HashCode": 1454843034,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp2.Client.Pages.ListContact",
+        "AssemblyName": "BlazorApp2.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp2.Client.Pages.ListContact"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp2.Client.Pages.ListContact",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -1584625778,
         "Kind": "Components.Component",
         "Name": "BlazorApp2.Client.Pages.AvailableContacts",
@@ -235,6 +202,72 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorApp2.Client.Pages.AvailableContacts",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1362495970,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp2.Client.Pages.DeleteContact",
+        "AssemblyName": "BlazorApp2.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "DeleteContact"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp2.Client.Pages.DeleteContact"
+        }
+      },
+      {
+        "HashCode": 258847597,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp2.Client.Pages.DeleteContact",
+        "AssemblyName": "BlazorApp2.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp2.Client.Pages.DeleteContact"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp2.Client.Pages.DeleteContact",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -776445014,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp2.Client.Pages.ThereIsContact",
+        "AssemblyName": "BlazorApp2.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ThereIsContact"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp2.Client.Pages.ThereIsContact"
+        }
+      },
+      {
+        "HashCode": -913950187,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp2.Client.Pages.ThereIsContact",
+        "AssemblyName": "BlazorApp2.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp2.Client.Pages.ThereIsContact"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp2.Client.Pages.ThereIsContact",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -272,35 +305,35 @@
         }
       },
       {
-        "HashCode": 1362495970,
+        "HashCode": -541175248,
         "Kind": "Components.Component",
-        "Name": "BlazorApp2.Client.Pages.DeleteContact",
+        "Name": "BlazorApp2.Client.Shared.NavMenu",
         "AssemblyName": "BlazorApp2.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "DeleteContact"
+            "TagName": "NavMenu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp2.Client.Pages.DeleteContact"
+          "Common.TypeName": "BlazorApp2.Client.Shared.NavMenu"
         }
       },
       {
-        "HashCode": 258847597,
+        "HashCode": 276413148,
         "Kind": "Components.Component",
-        "Name": "BlazorApp2.Client.Pages.DeleteContact",
+        "Name": "BlazorApp2.Client.Shared.NavMenu",
         "AssemblyName": "BlazorApp2.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorApp2.Client.Pages.DeleteContact"
+            "TagName": "BlazorApp2.Client.Shared.NavMenu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp2.Client.Pages.DeleteContact",
+          "Common.TypeName": "BlazorApp2.Client.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -397,39 +430,6 @@
           "Runtime.Name": "Components.None",
           "Common.TypeName": "BlazorApp2.Client.Shared.MainLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -541175248,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp2.Client.Shared.NavMenu",
-        "AssemblyName": "BlazorApp2.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp2.Client.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": 276413148,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp2.Client.Shared.NavMenu",
-        "AssemblyName": "BlazorApp2.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp2.Client.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp2.Client.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

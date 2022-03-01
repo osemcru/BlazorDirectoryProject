@@ -4691,6 +4691,39 @@
         }
       },
       {
+        "HashCode": -418840446,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp2.Client.Pages.FindContact",
+        "AssemblyName": "BlazorApp2.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FindContact"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp2.Client.Pages.FindContact"
+        }
+      },
+      {
+        "HashCode": 2000452556,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp2.Client.Pages.FindContact",
+        "AssemblyName": "BlazorApp2.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp2.Client.Pages.FindContact"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp2.Client.Pages.FindContact",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -1657885412,
         "Kind": "Components.Component",
         "Name": "BlazorApp2.Client.Pages.FullDirectoryContact",
@@ -4786,39 +4819,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorApp2.Client.Pages.ListContact",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -776445014,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp2.Client.Pages.ThereIsContact",
-        "AssemblyName": "BlazorApp2.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ThereIsContact"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp2.Client.Pages.ThereIsContact"
-        }
-      },
-      {
-        "HashCode": -913950187,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp2.Client.Pages.ThereIsContact",
-        "AssemblyName": "BlazorApp2.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp2.Client.Pages.ThereIsContact"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp2.Client.Pages.ThereIsContact",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

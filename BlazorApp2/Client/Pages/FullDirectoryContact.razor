@@ -5,17 +5,14 @@
 
 <h1>Full Directory</h1>
 
-@if(AddContact.sizeActually == Index.sizeContact){
-<span> The phone book is full</span>
-}else{
+@if (AddContact.sizeActually == Index.sizeContact)
+{
+    <span> The phone book is full</span>
+}
+else
+{
     <span> The phone book is not full</span>
 }
 
 @code {
-    private Contact contact = new();
-
-    private void HandleValidSubmit()
-    {
-        
-    }
 }
