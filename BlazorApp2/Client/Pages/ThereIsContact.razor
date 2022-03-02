@@ -15,11 +15,13 @@
     Contact name =
     <InputText id="nameContact" @bind-Value="contact.nameContact" />
     <br>
-     <div class="form-group">
-     <input type="submit" class="btn btn-success" value="There is Contact" />
-     </div>
+    <br>
+    <div class="form-group">
+        <input type="submit" class="btn btn-success" value="There is Contact" />
+    </div>
 </EditForm>
-
+<br>
+<br>
 Message: @message
 
 @code {
@@ -32,7 +34,7 @@ Message: @message
     {
         try
         {
-           _contact =  await Http.GetFromJsonAsync<bool>("/api/Contact/thereIs/" + contact.nameContact);
+            _contact = await Http.GetFromJsonAsync<bool>("/api/Contact/thereIs/" + contact.nameContact);
 
             if (!_contact)
             {

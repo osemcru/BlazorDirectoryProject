@@ -15,14 +15,19 @@
     Contact name =
     <InputText id="nameContact" @bind-Value="contact.nameContact" />
     <br>
+    <br>
     <div class="form-group">
         <input type="submit" class="btn btn-success" value="Delete Contact" />
     </div>
 </EditForm>
-
+<br>
+<br>
+<span>Message: @message</span>
 
 @code {
     private Contact contact = new();
+
+    string message ="";
 
     private async Task Delete()
     {
@@ -31,8 +36,11 @@
 
         if (response.IsSuccessStatusCode)
         {
+            message = "The contact has been deleted";
             Navigation.NavigateTo($"/listContacts");
             // AddContact.sizeActually--;
+        }else{
+            message = "The contact was not found";
         }
 
     }

@@ -11,8 +11,5 @@ Cosas que estan listas
 -> Se listan los contactos exitosamente
 -> Las respectivas validaciones con Data Annotations en Agregar,buscar, verificar
 si existe y eliminar.
+-> Se informa si se encuentra o no el contacto al eliminar, buscar
 
-Cosas que no estan listas
-
--> mejorar la UI con bootstrap.
--> Informar en buscar si no se ha encontrado.

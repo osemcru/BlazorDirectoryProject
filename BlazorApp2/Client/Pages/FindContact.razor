@@ -20,21 +20,15 @@
         <input type="submit" class="btn btn-success" value="Find Contact" />
     </div>
 </EditForm>
+<br>
+<br>
+<span>Message: @message</span>
 
-@if (_contact != null)
-{
-                <span>Name: @name</span>
-                <br>
-                <span>Cellphone: @cellphone</span>
-}else{
-    @name
-}
 
 @code {
     private Contact contact = new();
 
-    private string name ="";
-    private string cellphone="";
+    string message = "";
 
     private Contact _contact;
 
@@ -42,15 +36,14 @@
     {
         try
         {
-           _contact = await Http.GetFromJsonAsync<Contact>("/api/Contact/" + contact.nameContact);
-            
+
+            message = "That contact is not exist";
+            _contact = await Http.GetFromJsonAsync<Contact>("/api/Contact/" + contact.nameContact);
+
 
             if (_contact != null)
             {
-                name = _contact.nameContact;
-                cellphone = _contact.cellphoneContact;
-            }else{
-                name = "That contact is not exist";
+                message = "Contact " + _contact.nameContact + " has cellphone " + _contact.cellphoneContact;
             }
         }
         catch (Exception)
